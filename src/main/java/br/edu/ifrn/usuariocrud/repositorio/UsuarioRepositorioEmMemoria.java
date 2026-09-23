@@ -1,6 +1,7 @@
 package br.edu.ifrn.usuariocrud.repositorio;
 
 import br.edu.ifrn.usuariocrud.dominio.Usuario;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicLong;
 
+@Repository
 public class UsuarioRepositorioEmMemoria implements UsarioRepositorio {
     private static final Map<Long,Usuario> BANCO_EM_MEMORIS = new LinkedHashMap<>();
     private static final AtomicLong sequenciaID = new AtomicLong();

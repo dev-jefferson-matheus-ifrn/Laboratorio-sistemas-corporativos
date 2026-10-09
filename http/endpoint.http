@@ -1,0 +1,23 @@
+http://localhost:8080/tarefas
+
+
+###
+POST http://localhost:8080/tarefas
+Content-Type: application/json
+
+{
+    "titulo": "Minha Nova Tarefa",
+    "descricao": "Criar requisições usando arquivos .http",
+    "concluida": false,
+    "iDUsuario": 1
+}
+
+###
+POST http://localhost:8080/usuarios
+Content-Type: application/json
+
+{
+    "nome": "Jefferson Matheus",
+    "email": "email@teste.com.br",
+    "cargo": "Analista e desenvolvedor de sistemas"
+}

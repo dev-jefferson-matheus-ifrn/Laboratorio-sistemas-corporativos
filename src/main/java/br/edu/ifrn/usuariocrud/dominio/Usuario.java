@@ -7,6 +7,9 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @Entity
 @Table(name = "tb_usuarios")
@@ -27,5 +30,6 @@ public class Usuario {
     private String email;
     private String cargo;
 
-
+    @OneToMany(mappedBy = "usuario")
+    private List<Tarefa> tarefas = new ArrayList<>();
 }

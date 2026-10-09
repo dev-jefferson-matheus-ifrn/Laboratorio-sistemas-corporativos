@@ -15,11 +15,11 @@ public class UsuarioRepositorioEmMemoria  {
     private static final AtomicLong sequenciaID = new AtomicLong();
 
 
-    public Usuario criar(String nome, String email, String cargo) {
-        Usuario novoUsuario = new Usuario(sequenciaID.incrementAndGet(), nome, email, cargo);
-        BANCO_EM_MEMORIS.put(novoUsuario.getId(),novoUsuario);
-        return novoUsuario;
-    }
+//    public Usuario criar(String nome, String email, String cargo) {
+//        Usuario novoUsuario = new Usuario(sequenciaID.incrementAndGet(), nome, email, cargo);
+//        BANCO_EM_MEMORIS.put(novoUsuario.getId(),novoUsuario);
+//        return novoUsuario;
+//    }
 
 
     public List<Usuario> listarTodos() {
